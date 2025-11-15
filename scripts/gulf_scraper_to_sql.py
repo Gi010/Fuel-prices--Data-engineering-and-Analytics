@@ -109,7 +109,6 @@ conn_str = (
 conn = pyodbc.connect(conn_str)
 cursor = conn.cursor()
 
-# Optional: clear old data before inserting
 cursor.execute("TRUNCATE TABLE bronze.gulf;")
 conn.commit()
 
@@ -132,4 +131,5 @@ cursor.close()
 conn.close()
 
 print("✅ Fuel prices expanded, extended to today, and saved to SQL Server successfully!")
+
 
