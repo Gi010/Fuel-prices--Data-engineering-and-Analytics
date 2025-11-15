@@ -18,7 +18,7 @@ try:
     # Execute the stored procedure
     cursor.execute("EXEC bronze.load_brent_oil")
 
-    # Commit if your stored procedure does INSERT/UPDATE/DELETE
+    # Commit if stored procedure does INSERT/UPDATE/DELETE
     conn.commit()
 
     print("Stored procedure executed successfully.")
@@ -29,3 +29,4 @@ except Exception as e:
 finally:
     cursor.close()
     conn.close()
+
