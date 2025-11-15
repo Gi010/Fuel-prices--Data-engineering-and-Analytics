@@ -5,9 +5,9 @@ import pyodbc
 from datetime import timedelta, datetime
 
 # ---------- SQL CONFIG ----------
-server = 'GPAGHAVA\GPAGAVA'   # e.g., 'DESKTOP-123ABC\\SQLEXPRESS'
-database = 'OilDataWarehouse'  # e.g., 'fuel_data'
-table = 'bronze.gulf'  # schema.table name
+server = 'GPAGHAVA\GPAGAVA'
+database = 'OilDataWarehouse'
+table = 'bronze.gulf'
 
 # ---------- SCRAPER ----------
 base_url = 'https://gulf.ge/ge/fuel_prices?page='
@@ -109,7 +109,7 @@ conn_str = (
 conn = pyodbc.connect(conn_str)
 cursor = conn.cursor()
 
-# Optional: clear old data before inserting (comment out if you want to append instead)
+# Optional: clear old data before inserting
 cursor.execute("TRUNCATE TABLE bronze.gulf;")
 conn.commit()
 
@@ -132,3 +132,4 @@ cursor.close()
 conn.close()
 
 print("✅ Fuel prices expanded, extended to today, and saved to SQL Server successfully!")
+
