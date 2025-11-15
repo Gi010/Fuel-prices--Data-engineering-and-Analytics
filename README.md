@@ -3,6 +3,7 @@
 This project combines data engineering and data analytics to explore how fuel prices in Georgia relate to international Brent oil prices and GEL/USD exchange rate fluctuations. Although the fuel price data is obtained from Gulf Georgia, one of the largest oil companies in the country, fuel prices across all major providers are nearly identical—making this dataset representative for the whole market.
 
 ---
+
 ## 📌 Project Objectives
 
 Collect daily data on:
@@ -18,6 +19,7 @@ Analyze the dependency of local fuel prices on:
 
 Develop predictive insights using regression analysis and other analytics techniques
 
+
 ## 📦 Data Engineering Workflow
 
 ** Data Warehouse (MS SQL Server)
@@ -26,6 +28,7 @@ All data is stored in a structured MS SQL Server data warehouse, which supports:
 - Automated incremental updates
 - Querying for analytics
 - Integration with Python ETL workflows
+
 
 ## 🌐 Data Sources
 
@@ -55,6 +58,7 @@ Using the official JSON API, a Python script:
   
 Data range: From October 1, 2021 to present
 
+
 ## 📊 Data Analytics Workflow
 
 A dedicated Python analysis script:
@@ -70,6 +74,7 @@ Key questions analyzed:
 - How much influence does the GEL/USD exchange rate have?
 - Can we build a reliable predictive model based on historical behavior?
 
+
 ## 🛠️ Technologies Used
 
 **Python**
@@ -83,6 +88,7 @@ Key questions analyzed:
 
 **CSV / JSON**
 - Intermediate storage formats for scraped data
+
 
 ## 📈 Final Output
 
