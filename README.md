@@ -33,11 +33,13 @@ All data is stored in a structured MS SQL Server data warehouse, which supports:
 ## 🌐 Data Sources
 
 **Fuel Prices — Gulf Georgia**
+
 Source: https://www.gulf.ge
 A Python script scrapes fuel prices starting from October 28, 2021 up to the present.
 This script also automatically loads the data into MS SQL Server.
 
 **Brent Oil Prices — Investing.com**
+
 Source: https://www.investing.com
 
 Process:
@@ -49,6 +51,7 @@ Process:
 Data range: From October 1, 2021 to present
 
 **Exchange Rates — National Bank of Georgia**
+
 Source: https://nbg.gov.ge
 
 Using the official JSON API, a Python script:
