@@ -1,6 +1,5 @@
 """
-update_brent_data_csv_final.py
-- Updates your local Brent Oil historical data CSV from investing.com
+- Updates local Brent Oil historical data CSV from investing.com
 - Scrapes the latest rows (all columns)
 - Appends only missing rows by comparing dates
 - Sorts the final CSV with the newest date on top
@@ -138,3 +137,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
