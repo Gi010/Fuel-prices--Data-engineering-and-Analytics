@@ -22,7 +22,8 @@ Develop predictive insights using regression analysis and other analytics techni
 
 ## 📦 Data Engineering Workflow
 
-** Data Warehouse (MS SQL Server)
+**Data Warehouse (MS SQL Server)**
+
 All data is stored in a structured MS SQL Server data warehouse, which supports:
 - Historical storage
 - Automated incremental updates
