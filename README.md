@@ -83,7 +83,7 @@ Key questions analyzed:
 ## 🛠️ Technologies Used
 
 **Python**
-- BeautifulSoup / Requests (web scraping)
+- BeautifulSoup / Requests / Selenium (web scraping)
 - Pandas / NumPy (data processing)
 - Statsmodels / Scikit-learn (analytics)
 - Matplotlib / Seaborn (visualization)
